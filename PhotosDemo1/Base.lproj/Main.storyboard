@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="test2.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="Ofb-QE-OoS">
+                                <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LKb-aq-u1u">
+                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                <color key="backgroundColor" red="1" green="0.56081940549999998" blue="0.058602672010000002" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="save"/>
+                                <connections>
+                                    <action selector="save" destination="BYZ-38-t0r" eventType="touchUpInside" id="84d-qS-HDo"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="LKb-aq-u1u" secondAttribute="bottom" constant="281" id="4vl-DP-F58"/>
+                            <constraint firstItem="LKb-aq-u1u" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="144" id="Qta-IX-cdF"/>
+                            <constraint firstItem="Ofb-QE-OoS" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="60" id="fnf-vg-97F"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="Ofb-QE-OoS" secondAttribute="trailing" constant="60" id="iFh-pe-f3J"/>
+                            <constraint firstItem="LKb-aq-u1u" firstAttribute="top" secondItem="Ofb-QE-OoS" secondAttribute="bottom" constant="57" id="ifx-lU-hov"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="LKb-aq-u1u" secondAttribute="trailing" constant="143" id="noF-og-7QD"/>
+                            <constraint firstItem="Ofb-QE-OoS" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="83" id="wNv-nY-AfC"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="Ofb-QE-OoS" secondAttribute="bottom" constant="377" id="ys1-wM-RB8"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="subviews">
+                                <exclude reference="Ofb-QE-OoS"/>
+                                <exclude reference="LKb-aq-u1u"/>
+                            </mask>
+                            <mask key="constraints">
+                                <exclude reference="fnf-vg-97F"/>
+                                <exclude reference="iFh-pe-f3J"/>
+                                <exclude reference="wNv-nY-AfC"/>
+                                <exclude reference="Qta-IX-cdF"/>
+                                <exclude reference="ifx-lU-hov"/>
+                                <exclude reference="noF-og-7QD"/>
+                                <exclude reference="4vl-DP-F58"/>
+                                <exclude reference="ys1-wM-RB8"/>
+                            </mask>
+                        </variation>
+                        <variation key="widthClass=compact">
+                            <mask key="subviews">
+                                <include reference="Ofb-QE-OoS"/>
+                                <include reference="LKb-aq-u1u"/>
+                            </mask>
+                            <mask key="constraints">
+                                <include reference="fnf-vg-97F"/>
+                                <include reference="iFh-pe-f3J"/>
+                                <include reference="wNv-nY-AfC"/>
+                                <include reference="Qta-IX-cdF"/>
+                                <include reference="ifx-lU-hov"/>
+                                <include reference="noF-og-7QD"/>
+                                <include reference="4vl-DP-F58"/>
+                                <include reference="ys1-wM-RB8"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <connections>
+                        <outlet property="imageView" destination="Ofb-QE-OoS" id="L1S-te-Bse"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="141" y="477"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="test2.jpg" width="3000" height="2000"/>
+    </resources>
+</document>
